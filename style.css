@@ -82,3 +82,21 @@ footer{background:#041112;border-top:3px solid var(--gold);padding-top:38px;padd
 
 /* Rustige socialmedia-iconen */
 nav{align-items:center}.social-icon{width:34px;height:34px;border:1px solid rgba(229,198,60,.65);border-radius:50%;display:inline-flex!important;align-items:center;justify-content:center;padding:0!important;color:var(--gold)!important;text-decoration:none!important;font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:800;line-height:1;transition:background .2s ease,color .2s ease,transform .2s ease}.social-icon:hover{background:var(--gold);color:#062223!important;transform:translateY(-2px);text-decoration:none!important}.instagram-icon{font-size:23px;font-weight:500}.footer-socials{display:inline-flex;gap:9px;margin:7px 0 4px}.footer-socials .social-icon{width:32px;height:32px}.footer-socials+.footer-social{display:none}@media(max-width:800px){nav .social-icon{width:38px;height:38px}.footer-socials{margin-top:9px}}
+
+/* Fotoalbum STEP dienst Emmeloord */
+.album{padding:120px 8vw;background:linear-gradient(145deg,#061819 0%,#003b3c 58%,#071819 100%)}
+.album-head{display:grid;grid-template-columns:1.15fr .85fr;gap:8vw;align-items:end;margin-bottom:48px}
+.album-head h2{font-size:clamp(40px,6vw,76px);line-height:1.02;letter-spacing:-2px;margin:20px 0 8px}
+.album-head h2 span{color:var(--gold)}
+.album-date{margin:0;color:var(--teal);font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.album-head>p{max-width:480px;color:#d8e1df}
+.photo-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:220px;gap:14px}
+.album-photo{grid-column:span 4;display:block;overflow:hidden;position:relative;background:#071819;border:1px solid rgba(229,198,60,.18)}
+.album-photo.wide{grid-column:span 8}
+.album-photo.tall{grid-row:span 2}
+.album-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .45s ease,filter .45s ease}
+.album-photo:after{content:"Bekijk foto";position:absolute;right:14px;bottom:12px;padding:7px 10px;background:rgba(0,59,60,.84);color:var(--gold);font-size:11px;letter-spacing:1px;opacity:0;transform:translateY(5px);transition:.25s}
+.album-photo:hover img{transform:scale(1.035);filter:brightness(.88)}
+.album-photo:hover:after{opacity:1;transform:none}
+@media(max-width:800px){.album{padding:88px 7vw}.album-head{grid-template-columns:1fr;gap:10px;margin-bottom:32px}.photo-grid{grid-template-columns:1fr 1fr;grid-auto-rows:180px}.album-photo,.album-photo.wide{grid-column:span 1}.album-photo:first-child{grid-column:span 2}.album-photo.tall{grid-row:span 2}.album-photo:after{display:none}}
+@media(max-width:520px){.photo-grid{grid-template-columns:1fr;grid-auto-rows:auto}.album-photo,.album-photo.wide,.album-photo:first-child{grid-column:1}.album-photo.tall{grid-row:auto}.album-photo img{height:auto;aspect-ratio:4/3}.album-photo.tall img{aspect-ratio:3/4}}
