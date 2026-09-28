@@ -228,3 +228,25 @@ body.album-open{overflow:hidden}
   .hero-photo-wrap{width:calc(100% + 30vw);margin:-38px -15vw 0}
   .hero-photo{width:100%;max-height:60svh}
 }
+
+/* Mobiele hero: groepsfoto volledig van rand tot rand */
+@media(max-width:800px){
+  .hero{padding-left:0;padding-right:0}
+  .hero-content{padding-left:5vw;padding-right:5vw}
+  .hero-photo-wrap{
+    width:100vw;
+    margin:-42px 0 0;
+    overflow:visible;
+  }
+  .hero-photo{
+    width:100vw;
+    max-width:none;
+    max-height:none;
+    object-fit:contain;
+    object-position:center top;
+  }
+}
+@media(max-width:420px){
+  .hero-photo-wrap{width:100vw;margin:-38px 0 0}
+  .hero-photo{width:100vw;max-height:none}
+}
