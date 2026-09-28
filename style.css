@@ -57,3 +57,12 @@ footer{background:#041112;border-top:3px solid var(--gold);padding-top:38px;padd
 .btn:hover{transform:translateY(-2px)}
 .outline:hover{background:rgba(255,255,255,.08)}
 @media(max-width:800px){.band-section:before{left:7vw}.intro,.music,.agenda,.contact-section{padding-top:88px;padding-bottom:88px}.copy{padding-left:0;border-left:0}.brand-stripe:after{font-size:90px;right:-15px}.empty{padding:22px}.media-copy:after{font-size:78px}.contact-section:after{display:none}}
+
+/* Transparante groepsfoto: natuurlijk laten overvloeien in de VRIJ-achtergrond */
+.hero-photo-wrap{background:transparent}
+.hero-photo{object-fit:contain;object-position:center bottom;box-shadow:none;background:transparent;filter:drop-shadow(0 24px 30px rgba(0,0,0,.32))}
+.hero-photo-wrap:before{opacity:.45}
+.media-art.photo{background:linear-gradient(135deg,#0a5557 0%,#003b3c 55%,#061819 100%)}
+.media-art.photo img{object-fit:contain;object-position:center bottom;background:transparent;filter:drop-shadow(0 20px 24px rgba(0,0,0,.3))}
+.media-art.photo:after{box-shadow:inset -55px 0 85px rgba(6,24,25,.34)}
+@media(max-width:800px){.hero-photo{filter:drop-shadow(0 16px 20px rgba(0,0,0,.3))}.media-art.photo img{object-fit:contain}}
