@@ -135,3 +135,22 @@ nav{align-items:center}.social-icon{width:34px;height:34px;border:1px solid rgba
   .hero-photo-wrap{margin-top:-28px}
   .hero-photo{width:128%;max-height:50svh}
 }
+
+/* Fotoalbum Kerstnachtdienst Hasselt 2025 */
+.christmas-album{background:linear-gradient(145deg,#071819 0%,#003b3c 48%,#101313 100%)}
+.christmas-album .album-head{border-top:1px solid rgba(229,198,60,.28);padding-top:34px}
+.christmas-grid{grid-auto-flow:dense}
+.christmas-grid .album-photo:nth-child(7),
+.christmas-grid .album-photo:nth-child(9),
+.christmas-grid .album-photo:nth-child(10),
+.christmas-grid .album-photo:nth-child(11){grid-row:span 2}
+@media(max-width:800px){
+ .christmas-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:175px}
+ .christmas-grid .album-photo,.christmas-grid .album-photo.wide{grid-column:span 1}
+ .christmas-grid .album-photo.wide:nth-child(1),.christmas-grid .album-photo.wide:nth-child(12),.christmas-grid .album-photo.wide:nth-child(18){grid-column:span 2}
+}
+@media(max-width:520px){
+ .christmas-grid{grid-template-columns:1fr;grid-auto-rows:auto}
+ .christmas-grid .album-photo,.christmas-grid .album-photo.wide,.christmas-grid .album-photo.tall,.christmas-grid .album-photo.wide:nth-child(1),.christmas-grid .album-photo.wide:nth-child(12),.christmas-grid .album-photo.wide:nth-child(18){grid-column:1;grid-row:auto}
+ .christmas-grid .album-photo img{height:auto;aspect-ratio:auto}
+}
