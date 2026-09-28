@@ -18,3 +18,42 @@
 .hero .btn{padding:15px 25px}
 @media(max-width:1000px){.hero{grid-template-columns:1fr 1fr;gap:3vw}.hero-photo-wrap{min-height:500px}.hero-photo{max-height:540px}}
 @media(max-width:800px){.hero{min-height:auto;grid-template-columns:1fr;padding:100px 7vw 55px;text-align:center}.hero-content{padding:0;max-width:100%}.hero-logo{margin:10px auto 18px;width:205px}.hero-line{margin:0 auto 22px}.hero-photo-wrap{order:2;min-height:0;margin-top:34px}.hero-photo-wrap:before{inset:5% 2% 0;transform:translate(-10px,-10px)}.hero-photo{max-height:none;width:100%}.hero-glow{right:-330px}.hero .eyebrow:before{display:none}}
+
+/* Doorlopende VRIJ-huisstijl */
+body{background:#06191a}
+main{overflow:hidden}
+.band-section{position:relative}
+.band-section:before{content:"";position:absolute;left:8vw;top:0;width:74px;height:3px;background:var(--gold)}
+.light-section{background:linear-gradient(135deg,#f5f3e9 0%,#fff 58%,#e7f2f0 100%)}
+.dark-section{background:linear-gradient(135deg,#071819 0%,#003b3c 52%,#061819 100%)}
+.intro{padding-top:125px;padding-bottom:125px}
+.intro h2,.agenda h2{letter-spacing:-2px}
+.intro h2 span,.agenda h2 span{color:#087f80}
+.copy{position:relative;padding-left:28px;border-left:1px solid rgba(0,59,60,.22)}
+.brand-stripe{position:relative;overflow:hidden;background:linear-gradient(100deg,#d8b62d 0%,#f0d85b 52%,#d6b226 100%);padding:58px 8vw}
+.brand-stripe:after{content:"VRIJ";position:absolute;right:4vw;top:50%;transform:translateY(-50%);font-size:150px;font-weight:900;letter-spacing:-10px;color:rgba(0,59,60,.08)}
+.music{padding-top:125px;padding-bottom:125px}
+.music:after{content:"";position:absolute;width:500px;height:500px;border:1px solid rgba(229,198,60,.12);border-radius:50%;right:-250px;top:80px}
+.sectionhead h2{letter-spacing:-2px}
+.cards{position:relative;z-index:1}
+.cards article{background:rgba(5,24,25,.72);border:1px solid rgba(255,255,255,.08);border-top:3px solid var(--gold);box-shadow:0 18px 38px rgba(0,0,0,.18);transition:transform .25s ease,border-color .25s ease}
+.cards article:hover{transform:translateY(-5px);border-color:rgba(229,198,60,.55)}
+.cards b{font-size:13px;letter-spacing:2px}
+.agenda{padding-top:125px;padding-bottom:125px}
+.empty{background:rgba(255,255,255,.52);padding:28px;border-color:rgba(0,59,60,.22)}
+.date{box-shadow:0 8px 22px rgba(0,59,60,.18);border:2px solid var(--gold)}
+.media{min-height:660px;background:#061819}
+.media-art.photo{position:relative;background:#f5f3e9}
+.media-art.photo:after{content:"";position:absolute;inset:0;box-shadow:inset -40px 0 70px rgba(6,24,25,.25);pointer-events:none}
+.media-copy{background:linear-gradient(135deg,#003b3c 0%,#061819 100%);position:relative}
+.media-copy:after{content:"VRIJ";position:absolute;right:5%;bottom:0;font-size:110px;font-weight:900;line-height:.8;color:rgba(229,198,60,.055);letter-spacing:-7px}
+.contact-section{background:linear-gradient(125deg,#061819 0%,#003b3c 65%,#07595b 100%);padding-top:125px;padding-bottom:125px}
+.contact-section:after{content:"";position:absolute;right:-180px;bottom:-220px;width:500px;height:500px;border-radius:50%;border:1px solid rgba(229,198,60,.18)}
+.contact h2{letter-spacing:-2px}
+input,textarea{border:1px solid rgba(229,198,60,.28);background:rgba(255,255,255,.055);border-radius:2px}
+input:focus,textarea:focus{outline:1px solid var(--gold);border-color:var(--gold)}
+footer{background:#041112;border-top:3px solid var(--gold);padding-top:38px;padding-bottom:38px}
+.btn{transition:transform .2s ease,background .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.outline:hover{background:rgba(255,255,255,.08)}
+@media(max-width:800px){.band-section:before{left:7vw}.intro,.music,.agenda,.contact-section{padding-top:88px;padding-bottom:88px}.copy{padding-left:0;border-left:0}.brand-stripe:after{font-size:90px;right:-15px}.empty{padding:22px}.media-copy:after{font-size:78px}.contact-section:after{display:none}}
