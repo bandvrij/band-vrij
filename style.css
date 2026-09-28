@@ -75,3 +75,5 @@ footer{background:#041112;border-top:3px solid var(--gold);padding-top:38px;padd
 .media-art.photo img{width:112%;height:112%;max-width:none;object-fit:contain;object-position:center bottom}
 @media(max-width:1000px){.hero{grid-template-columns:minmax(0,1.15fr) minmax(340px,.85fr)}.hero-photo-wrap{min-height:580px}.hero-photo{width:108%;max-height:650px}}
 @media(max-width:800px){.hero{grid-template-columns:1fr;padding-left:4vw;padding-right:4vw}.hero-photo-wrap{min-height:0;margin-left:-4vw;margin-right:-4vw}.hero-photo{width:108%;max-width:none;margin-left:-4%}.media{grid-template-columns:1fr}.media-art.photo img{width:108%;height:auto}}
+
+.social-link{color:var(--gold);font-weight:700}.footer-social{color:var(--gold);text-decoration:none;display:inline-block;margin:4px 0}.footer-social:hover,.social-link:hover{text-decoration:underline}
