@@ -184,3 +184,25 @@ nav{align-items:center}.social-icon{width:34px;height:34px;border:1px solid rgba
 body.album-open{overflow:hidden}
 @media(max-width:800px){.albums-overview{padding:88px 7vw}.album-covers{grid-template-columns:1fr}.album-cover{min-height:280px}.album-modal-panel{inset:2vh 2vw;padding:60px 4vw 40px}.album-close{right:5vw;top:4vh}.album-modal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.album-modal-grid img{height:190px}}
 @media(max-width:520px){.album-cover{min-height:230px}.album-cover-overlay{left:18px;right:18px;bottom:18px}.album-modal-grid{grid-template-columns:1fr}.album-modal-grid img{height:auto}.album-modal-panel{inset:0;padding:70px 14px 30px}.album-close{position:absolute;right:18px;top:16px}}
+
+/* Mobiele correctie fotoalbums */
+@media(max-width:800px){
+  .albums-overview{padding:72px 18px}
+  .albums-heading{margin-bottom:26px}
+  .album-covers{display:grid;grid-template-columns:1fr;gap:16px;width:100%}
+  .album-cover{width:100%;min-height:0;height:auto;aspect-ratio:16/9;border-radius:0}
+  .album-cover img{width:100%;height:100%;object-fit:cover}
+  .album-cover-overlay{left:16px;right:16px;bottom:15px}
+  .album-cover-overlay strong{font-size:22px}
+  .album-cover-overlay small{font-size:11px;margin-top:5px}
+  .album-modal-panel{inset:0;padding:70px 14px 28px}
+  .album-modal-grid{grid-template-columns:1fr;gap:10px}
+  .album-modal-grid a{width:100%}
+  .album-modal-grid img{width:100%;height:auto;max-height:none;object-fit:contain}
+  .album-close{position:fixed;right:16px;top:16px;width:42px;height:42px}
+}
+@media(max-width:420px){
+  .albums-overview{padding-left:14px;padding-right:14px}
+  .album-cover{aspect-ratio:16/10}
+  .album-cover-overlay strong{font-size:20px}
+}
