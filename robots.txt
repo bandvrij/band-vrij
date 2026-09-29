@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bandvrij.github.io/band-vrij/sitemap.xml
