@@ -337,3 +337,19 @@ body.album-open{overflow:hidden}
     padding:0;
   }
 }
+
+
+/* Desktop/tablet homepage: groepsfoto prominenter */
+@media(min-width:801px){
+  .hero-photo-wrap{
+    width:58%;
+    margin-left:-4%;
+    overflow:visible;
+  }
+  .hero-photo{
+    width:118%;
+    max-width:none;
+    height:auto;
+    object-fit:contain;
+  }
+}
