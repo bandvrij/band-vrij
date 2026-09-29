@@ -315,3 +315,25 @@ body.album-open{overflow:hidden}
 .footer-logo-block .footer-logo{margin:0}
 .footer-email{font-size:11px;letter-spacing:.04em;color:inherit;text-decoration:none;opacity:.78}
 .footer-email:hover{opacity:1;text-decoration:underline}
+
+
+/* Mobiele homepage: groepsfoto extra groot */
+@media(max-width:800px){
+  .hero-photo-wrap{
+    width:112%;
+    margin:-58px -6% 0;
+    padding:0;
+  }
+  .hero-photo{
+    width:100%;
+    max-width:none;
+    height:auto;
+  }
+}
+@media(max-width:420px){
+  .hero-photo-wrap{
+    width:118%;
+    margin:-62px -9% 0;
+    padding:0;
+  }
+}
