@@ -353,3 +353,36 @@ body.album-open{overflow:hidden}
     object-fit:contain;
   }
 }
+
+
+/* Homepage: personen in groepsfoto groter in beeld */
+@media(min-width:801px){
+  .hero-photo-wrap{
+    width:64%;
+    margin-left:-8%;
+  }
+  .hero-photo{
+    width:132%;
+    max-width:none;
+    transform:translateX(-2%);
+    transform-origin:center center;
+  }
+}
+@media(max-width:800px){
+  .hero-photo-wrap{
+    width:126%;
+    margin-left:-13%;
+    margin-right:-13%;
+  }
+  .hero-photo{
+    width:100%;
+    max-width:none;
+  }
+}
+@media(max-width:420px){
+  .hero-photo-wrap{
+    width:132%;
+    margin-left:-16%;
+    margin-right:-16%;
+  }
+}
