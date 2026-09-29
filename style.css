@@ -308,3 +308,10 @@ body.album-open{overflow:hidden}
     max-width:none;
   }
 }
+
+
+/* E-mailadres onder logo in footer */
+.footer-logo-block{display:flex;flex-direction:column;align-items:center;gap:5px}
+.footer-logo-block .footer-logo{margin:0}
+.footer-email{font-size:11px;letter-spacing:.04em;color:inherit;text-decoration:none;opacity:.78}
+.footer-email:hover{opacity:1;text-decoration:underline}
