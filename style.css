@@ -271,3 +271,40 @@ body.album-open{overflow:hidden}
   .hero-photo-wrap{width:100%;margin:-20px 0 0;padding:0 7vw}
   .hero-photo{width:100%;height:auto}
 }
+
+
+/* Mobiele homepage: groter logo en groepsfoto dichter bij elkaar */
+@media(max-width:800px){
+  .hero-logo{
+    width:min(72vw, 360px);
+    max-width:none;
+    margin-bottom:10px;
+  }
+  .hero-photo-wrap{
+    width:100%;
+    margin:-44px 0 0;
+    padding:0 2.5vw;
+    box-sizing:border-box;
+    justify-content:center;
+  }
+  .hero-photo{
+    width:100%;
+    max-width:860px;
+    height:auto;
+    object-fit:contain;
+  }
+}
+@media(max-width:420px){
+  .hero-logo{
+    width:min(78vw, 330px);
+    margin-bottom:6px;
+  }
+  .hero-photo-wrap{
+    margin:-48px 0 0;
+    padding:0 1vw;
+  }
+  .hero-photo{
+    width:100%;
+    max-width:none;
+  }
+}
