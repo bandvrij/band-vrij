@@ -386,3 +386,43 @@ body.album-open{overflow:hidden}
     margin-right:-16%;
   }
 }
+
+
+/* Mobiele hero: volledige bestaande groepsfoto zichtbaar en dichter bij het VRIJ-logo */
+@media(max-width:800px){
+  .hero-logo{
+    width:min(76vw,350px);
+    margin-bottom:0;
+  }
+  .hero-photo-wrap{
+    width:108%;
+    margin:-72px -4% 0;
+    padding:0 3vw;
+    box-sizing:border-box;
+    justify-content:center;
+    overflow:visible;
+  }
+  .hero-photo{
+    width:100%;
+    max-width:760px;
+    height:auto;
+    object-fit:contain;
+    transform:none;
+  }
+}
+@media(max-width:420px){
+  .hero-logo{
+    width:min(80vw,330px);
+    margin-bottom:0;
+  }
+  .hero-photo-wrap{
+    width:110%;
+    margin:-76px -5% 0;
+    padding:0 4vw;
+  }
+  .hero-photo{
+    width:100%;
+    max-width:none;
+    transform:none;
+  }
+}
